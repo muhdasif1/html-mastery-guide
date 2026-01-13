@@ -1,0 +1,1046 @@
+<!-- This declares the document type as HTML5. Must be the first line -->
+<!DOCTYPE html>
+
+<!-- Root element of HTML page. lang="en" specifies English language -->
+<html lang="en">
+
+<!-- HEAD section: Contains metadata (info about the page, not visible on page) -->
+<head>
+    
+    <!-- META TAGS: Provide information about the webpage -->
+    
+    <!-- Specifies character encoding. UTF-8 supports all characters/languages -->
+    <meta charset="UTF-8">
+    
+    <!-- Makes website responsive on mobile devices. Controls viewport scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Description shown in search engine results -->
+    <meta name="description" content="Complete HTML guide covering all elements">
+    
+    <!-- Keywords for search engines (less important now) -->
+    <meta name="keywords" content="HTML, tutorial, reference">
+    
+    <!-- Specifies the author of the document -->
+    <meta name="author" content="Your Name">
+    
+    <!-- Title shown in browser tab -->
+    <title>Complete HTML Reference - Everything You Need</title>
+    
+    <!-- STYLE tag: Contains internal CSS styling for the page -->
+    <style>
+        /* Styles the body element */
+        body {
+            font-family: Arial, sans-serif;  /* Sets font to Arial */
+            line-height: 1.6;                /* Space between lines */
+            margin: 20px;                    /* Space around page edges */
+            background-color: #f4f4f4;     /* Light gray background */
+        }
+        
+        /* Styles all section elements */
+        section {
+            background: white;                        /* White background */
+            margin: 20px 0;                             /* Vertical spacing */
+            padding: 20px;                              /* Inner spacing */
+            border-radius: 5px;                         /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);    /* Shadow effect */
+        }
+        
+        /* Styles h1 headings */
+        h1 { 
+            color: #333;                          /* Dark gray text */
+            border-bottom: 3px solid #007bff;     /* Blue bottom border */
+        }
+        
+        /* Styles h2 headings */
+        h2 { 
+            color: #007bff;  /* Blue text color */
+        }
+        
+        /* Styles code elements */
+        code { 
+            background: #f4f4f4;    /* Light gray background */
+            padding: 2px 5px;         /* Small padding around text */
+            border-radius: 3px;       /* Slightly rounded corners */
+        }
+        
+        /* Styles all tables */
+        table { 
+            border-collapse: collapse;  /* Removes space between table cells */
+            width: 100%;               /* Full width of container */
+            margin: 10px 0;           /* Vertical spacing */
+        }
+        
+        /* Styles table headers (th) and table data (td) */
+        th, td { 
+            border: 1px solid #ddd;  /* Light gray border */
+            padding: 8px;            /* Space inside cells */
+            text-align: left;        /* Align text to left */
+        }
+        
+        /* Styles only table headers */
+        th { 
+            background-color: #007bff;  /* Blue background */
+            color: white;               /* White text */
+        }
+    </style>
+    
+<!-- Closing tag for head section -->
+</head>
+
+<!-- BODY section: Contains all visible content on the webpage -->
+<body>
+
+<!-- HTML COMMENT: Not visible on page, only in source code -->
+<!-- ======================================== -->
+<!--      MAIN HEADER                        -->
+<!-- ======================================== -->
+
+<!-- HEADER: Semantic element for introductory content -->
+<header>
+    
+    <!-- H1: Largest heading, should be used once per page for main title -->
+    <h1>Complete HTML Reference Guide</h1>
+    
+    <!-- P: Paragraph element for text content -->
+    <p>Everything a developer learns in 2 months, organized in one document</p>
+    
+    <!-- NAV: Semantic element for navigation links -->
+    <nav>
+        <!-- A: Anchor tags create hyperlinks. href="#id" jumps to element with that id -->
+        <a href="#text-elements">Text Elements</a> |  <!-- Pipe character is visual separator -->
+        <a href="#lists">Lists</a> |
+        <a href="#links">Links</a> |
+        <a href="#images">Images</a> |
+        <a href="#tables">Tables</a> |
+        <a href="#forms">Forms</a> |
+        <a href="#semantic">Semantic HTML</a>
+    </nav>
+    
+<!-- Closing tag for header -->
+</header>
+
+<!-- ======================================== -->
+<!--      1. TEXT ELEMENTS                   -->
+<!-- ======================================== -->
+
+<!-- SECTION: Semantic element for thematic grouping. id allows jumping here -->
+<section id="text-elements">
+    
+    <!-- H2: Second-level heading -->
+    <h2>1. Text Elements & Formatting</h2>
+    
+    <!-- H3: Third-level heading for sub-sections -->
+    <h3>Headings (H1-H6)</h3>
+    
+    <!-- H1 through H6: Six levels of headings, H1 largest to H6 smallest -->
+    <h1>Heading 1 - Largest</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6 - Smallest</h6>
+    
+    <h3>Paragraphs and Line Breaks</h3>
+    
+    <!-- P: Paragraph is a block element (takes full width) -->
+    <p>This is a paragraph. Paragraphs are block-level elements.</p>
+    
+    <!-- BR: Line break tag (self-closing). Forces new line without new paragraph -->
+    <p>This is another paragraph with a <br> line break in the middle.</p>
+    
+    <h3>Text Formatting Tags</h3>
+    
+    <!-- STRONG: Bold text with semantic importance (for screen readers) -->
+    <p><strong>Bold text (strong importance)</strong></p>
+    
+    <!-- B: Bold text visual only (no semantic meaning) -->
+    <p><b>Bold text (visual only)</b></p>
+    
+    <!-- EM: Italic text with emphasis (semantic) -->
+    <p><em>Italic text (emphasized)</em></p>
+    
+    <!-- I: Italic text visual only (no semantic meaning) -->
+    <p><i>Italic text (visual only)</i></p>
+    
+    <!-- U: Underlined text -->
+    <p><u>Underlined text</u></p>
+    
+    <!-- S: Strikethrough text (line through text) -->
+    <p><s>Strikethrough text</s></p>
+    
+    <!-- MARK: Highlighted/marked text (yellow background by default) -->
+    <p><mark>Highlighted text</mark></p>
+    
+    <!-- SMALL: Smaller text size -->
+    <p><small>Small text</small></p>
+    
+    <!-- DEL: Deleted text (shows as strikethrough) -->
+    <p><del>Deleted text</del></p>
+    
+    <!-- INS: Inserted text (shows as underlined) -->
+    <p><ins>Inserted text</ins></p>
+    
+    <!-- SUB: Subscript text (appears below baseline, like in H₂O) -->
+    <p>H<sub>2</sub>O - Subscript</p>
+    
+    <!-- SUP: Superscript text (appears above baseline, like in X²) -->
+    <p>X<sup>2</sup> - Superscript</p>
+    
+    <h3>Preformatted Text & Code</h3>
+    
+    <!-- PRE: Preformatted text preserves spaces and line breaks exactly -->
+    <pre>
+    This is preformatted text.
+    It preserves    spaces
+    and line breaks.
+    </pre>
+    
+    <!-- CODE: Displays inline code with monospace font -->
+    <code>console.log("This is inline code");</code>
+    
+    <!-- KBD: Represents keyboard input -->
+    <p><kbd>Ctrl + C</kbd> - Keyboard input</p>
+    
+    <!-- SAMP: Represents sample output from computer program -->
+    <p><samp>Error: File not found</samp> - Sample output</p>
+    
+    <!-- VAR: Represents a variable in programming/math -->
+    <p><var>x</var> = 5 - Variable</p>
+    
+    <h3>Quotations</h3>
+    
+    <!-- BLOCKQUOTE: Block-level quotation. cite attribute specifies source URL -->
+    <blockquote cite="https://example.com">
+        This is a block quotation. It's typically indented.
+    </blockquote>
+    
+    <!-- Q: Inline quotation with automatic quotation marks -->
+    <p><q>This is an inline quote with automatic quotation marks.</q></p>
+    
+    <!-- CITE: Represents title of a creative work -->
+    <p><cite>The Great Gatsby</cite> - Citation</p>
+    
+    <!-- ABBR: Abbreviation. title shows full form on hover -->
+    <p><abbr title="HyperText Markup Language">HTML</abbr> - Abbreviation</p>
+    
+    <!-- HR: Horizontal rule - creates horizontal line separator -->
+    <hr>
+    <p>Horizontal rule above separates content</p>
+    
+<!-- Closing tag for section -->
+</section>
+
+<!-- ======================================== -->
+<!--      2. LISTS                           -->
+<!-- ======================================== -->
+
+<section id="lists">
+    <h2>2. Lists</h2>
+    
+    <h3>Unordered List (Bullets)</h3>
+    
+    <!-- UL: Unordered list (bullet points) -->
+    <ul>
+        <!-- LI: List item inside ul or ol -->
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item
+            <!-- Nested UL: List inside another list -->
+            <ul>
+                <li>Nested item 1</li>
+                <li>Nested item 2</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>Ordered List (Numbers)</h3>
+    
+    <!-- OL: Ordered list (numbered list) -->
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+    
+    <!-- OL with type="A": Uses uppercase letters (A, B, C...) -->
+    <ol type="A">
+        <li>Item A</li>
+        <li>Item B</li>
+    </ol>
+    
+    <!-- OL with type="I": Uses Roman numerals (I, II, III...) -->
+    <ol type="I">
+        <li>Roman I</li>
+        <li>Roman II</li>
+    </ol>
+    
+    <h3>Description List</h3>
+    
+    <!-- DL: Description list (term and definition pairs) -->
+    <dl>
+        <!-- DT: Definition term (the word being defined) -->
+        <dt>HTML</dt>
+        <!-- DD: Definition description (the actual definition) -->
+        <dd>HyperText Markup Language</dd>
+        
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        
+        <dt>JavaScript</dt>
+        <dd>Programming language for web</dd>
+    </dl>
+    
+</section>
+
+<!-- ======================================== -->
+<!--      3. LINKS & NAVIGATION              -->
+<!-- ======================================== -->
+
+<section id="links">
+    <h2>3. Links (Anchor Tags)</h2>
+    
+    <h3>Different Types of Links</h3>
+    
+    <!-- A with href: External link to another website -->
+    <p><a href="https://www.google.com">External Link</a></p>
+    
+    <!-- target="_blank": Opens link in new browser tab/window -->
+    <p><a href="https://www.google.com" target="_blank">Open in New Tab</a></p>
+    
+    <!-- href="#id": Internal link jumps to element with that id on same page -->
+    <p><a href="#top">Internal Link (Jump to section)</a></p>
+    
+    <!-- Relative link: Links to another page in same website -->
+    <p><a href="page2.html">Relative Link</a></p>
+    
+    <!-- mailto: Creates email link, opens default email client -->
+    <p><a href="mailto:email@example.com">Email Link</a></p>
+    
+    <!-- tel: Creates phone link, useful on mobile devices -->
+    <p><a href="tel:+1234567890">Phone Link</a></p>
+    
+    <!-- download attribute: Forces browser to download instead of open -->
+    <p><a href="document.pdf" download>Download Link</a></p>
+    
+    <h3>Bookmark Example</h3>
+    
+    <!-- This link jumps to the element with id="forms" further down the page -->
+    <p><a href="#forms">Jump to Forms Section</a></p>
+    
+</section>
+
+<!-- ======================================== -->
+<!--      4. IMAGES & MEDIA                  -->
+<!-- ======================================== -->
+
+<section id="images">
+    <h2>4. Images & Media</h2>
+    
+    <h3>Images</h3>
+    
+    <!-- IMG: Image tag (self-closing) -->
+    <!-- src: Source/path to image file -->
+    <!-- alt: Alternative text (shows if image fails, used by screen readers) -->
+    <!-- width/height: Dimensions in pixels -->
+    <img src="https://via.placeholder.com/300x200" alt="Placeholder image" width="300" height="200">
+    
+    <!-- Image wrapped in anchor tag becomes clickable -->
+    <a href="https://example.com">
+        <img src="https://via.placeholder.com/150" alt="Clickable image">
+    </a>
+    
+    <!-- FIGURE: Container for media with caption -->
+    <figure>
+        <img src="https://via.placeholder.com/400x300" alt="Sample image">
+        <!-- FIGCAPTION: Caption/description for figure -->
+        <figcaption>This is an image caption using figure and figcaption</figcaption>
+    </figure>
+    
+    <!-- PICTURE: Responsive images for different screen sizes -->
+    <picture>
+        <!-- SOURCE: Defines which image to use based on screen width -->
+        <!-- media: CSS media query condition -->
+        <!-- srcset: Image source for this condition -->
+        <source media="(min-width: 650px)" srcset="https://via.placeholder.com/800x600">
+        <source media="(min-width: 465px)" srcset="https://via.placeholder.com/400x300">
+        <!-- IMG: Fallback image if no source matches -->
+        <img src="https://via.placeholder.com/200x150" alt="Responsive image">
+    </picture>
+    
+    <h3>Audio</h3>
+    
+    <!-- AUDIO: Embeds audio player. controls shows play/pause buttons -->
+    <audio controls>
+        <!-- Multiple SOURCE tags for browser compatibility -->
+        <!-- Browser uses first format it supports -->
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        <!-- Fallback text if browser doesn't support audio -->
+        Your browser does not support audio.
+    </audio>
+    
+    <h3>Video</h3>
+    
+    <!-- VIDEO: Embeds video player -->
+    <!-- width: Player width in pixels -->
+    <!-- controls: Shows video controls (play, pause, volume, etc.) -->
+    <!-- poster: Thumbnail image shown before video plays -->
+    <video width="400" controls poster="thumbnail.jpg">
+        <!-- Multiple sources for browser compatibility -->
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <!-- Fallback text if browser doesn't support video -->
+        Your browser does not support video.
+    </video>
+    
+    <h3>Iframe (Embed Content)</h3>
+    
+    <!-- IFRAME: Embeds another webpage inside current page -->
+    <!-- Common for embedding YouTube videos, maps, etc. -->
+    <!-- frameborder="0": Removes border around iframe -->
+    <!-- allowfullscreen: Allows video to go fullscreen -->
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="YouTube video" frameborder="0" allowfullscreen>
+    </iframe>
+    
+</section>
+
+<!-- ======================================== -->
+<!--      5. TABLES                          -->
+<!-- ======================================== -->
+
+<section id="tables">
+    <h2>5. Tables</h2>
+    
+    <h3>Basic Table</h3>
+    
+    <!-- TABLE: Container for entire table -->
+    <table>
+        <!-- CAPTION: Title/caption for table (optional) -->
+        <caption>Student Records</caption>
+        
+        <!-- THEAD: Table header section -->
+        <thead>
+            <!-- TR: Table row -->
+            <tr>
+                <!-- TH: Table header cell (bold and centered by default) -->
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        
+        <!-- TBODY: Table body section (main content) -->
+        <tbody>
+            <tr>
+                <!-- TD: Table data cell (regular content) -->
+                <td>John Doe</td>
+                <td>20</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>22</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Bob Johnson</td>
+                <td>21</td>
+                <td>A+</td>
+            </tr>
+        </tbody>
+        
+        <!-- TFOOT: Table footer section -->
+        <tfoot>
+            <tr>
+                <!-- colspan="2": Makes cell span across 2 columns -->
+                <td colspan="2">Total Students</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <h3>Table with Colspan and Rowspan</h3>
+    
+    <table>
+        <tr>
+            <th>Name</th>
+            <!-- colspan="2": This header spans 2 columns -->
+            <th colspan="2">Details</th>
+        </tr>
+        <tr>
+            <!-- rowspan="2": This cell spans 2 rows vertically -->
+            <td rowspan="2">John</td>
+            <td>Age: 25</td>
+            <td>City: NYC</td>
+        </tr>
+        <tr>
+            <!-- First cell omitted because rowspan from above fills it -->
+            <td>Job: Developer</td>
+            <td>Level: Senior</td>
+        </tr>
+    </table>
+    
+</section>
+
+<!-- ======================================== -->
+<!--      6. FORMS                           -->
+<!-- ======================================== -->
+
+<section id="forms">
+    <h2>6. Forms & Input Elements</h2>
+    
+    <!-- FORM: Container for form elements -->
+    <!-- action: URL where form data is sent when submitted -->
+    <!-- method: HTTP method - POST sends data hidden, GET sends in URL -->
+    <form action="/submit" method="POST">
+        
+        <h3>Text Inputs</h3>
+        
+        <!-- LABEL: Text label for input. for="id" links to input with that id -->
+        <label for="name">Name:</label>
+        <!-- INPUT type="text": Single-line text input -->
+        <!-- id: Unique identifier (links with label) -->
+        <!-- name: Field name sent to server -->
+        <!-- placeholder: Hint text shown in empty field -->
+        <!-- required: Field must be filled before submitting -->
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <!-- BR: Line breaks for spacing between inputs -->
+        <br><br>
+        
+        <!-- type="email": Email input with validation (checks for @ symbol) -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+        <br><br>
+        
+        <!-- type="password": Hides typed characters with dots/asterisks -->
+        <!-- minlength="8": Requires at least 8 characters -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8">
+        <br><br>
+        
+        <!-- type="tel": Telephone number input -->
+        <!-- pattern: Regular expression for validation format -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <br><br>
+        
+        <!-- type="url": URL input with validation (checks for http:// etc.) -->
+        <label for="url">Website:</label>
+        <input type="url" id="url" name="url" placeholder="https://example.com">
+        <br><br>
+        
+        <!-- type="search": Search input (may have X to clear on some browsers) -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search">
+        <br><br>
+        
+        <h3>Number & Date Inputs</h3>
+        
+        <!-- type="number": Number input with up/down arrows -->
+        <!-- min/max: Allowed number range -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120">
+        <br><br>
+        
+        <!-- type="range": Slider control -->
+        <!-- value: Default/initial value -->
+        <label for="quantity">Quantity:</label>
+        <input type="range" id="quantity" name="quantity" min="0" max="100" value="50">
+        <br><br>
+        
+        <!-- type="date": Date picker (shows calendar) -->
+        <label for="birthdate">Birth Date:</label>
+        <input type="date" id="birthdate" name="birthdate">
+        <br><br>
+        
+        <!-- type="time": Time picker (hours and minutes) -->
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+        
+        <!-- type="datetime-local": Date and time picker combined -->
+        <label for="datetime">Date & Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime">
+        <br><br>
+        
+        <!-- type="month": Month and year picker -->
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month">
+        <br><br>
+        
+        <!-- type="week": Week number picker -->
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week">
+        <br><br>
+        
+        <h3>Radio Buttons</h3>
+        
+        <!-- type="radio": Radio button (only one can be selected per name group) -->
+        <!-- name="gender": Same name groups them together -->
+        <!-- value: Value sent to server when selected -->
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+        
+        <h3>Checkboxes</h3>
+        
+        <!-- type="checkbox": Checkbox (multiple can be selected) -->
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to newsletter</label>
+        <br>
+        
+        <!-- Checkbox with required: Must be checked to submit -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to terms</label>
+        <br><br>
+        
+        <h3>Dropdown Select</h3>
+        
+        <!-- SELECT: Dropdown menu -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <!-- OPTION: Each choice in dropdown. value sent to server -->
+            <option value="">-- Select Country --</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+            
+            <!-- OPTGROUP: Groups related options with label -->
+            <optgroup label="Asia">
+                <option value="india">India</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="china">China</option>
+            </optgroup>
+        </select>
+        <br><br>
+        
+        <!-- multiple: Allows selecting multiple options (hold Ctrl/Cmd) -->
+        <!-- size="4": Shows 4 options at once (scrollable list) -->
+        <label for="skills">Skills (Hold Ctrl/Cmd):</label>
+        <select id="skills" name="skills" multiple size="4">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="python">Python</option>
+        </select>
+        <br><br>
+        
+        <h3>Textarea</h3>
+        
+        <!-- TEXTAREA: Multi-line text input -->
+        <!-- rows: Number of visible text lines -->
+        <!-- cols: Width in characters -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" 
+                  placeholder="Enter your message here..."></textarea>
+        <br><br>
+        
+        <h3>File Upload</h3>
+        
+        <!-- type="file": File upload button -->
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+        
+        <!-- multiple: Allows selecting multiple files -->
+        <!-- accept: Restricts file types allowed -->
+        <label for="files">Upload Multiple Files:</label>
+        <input type="file" id="files" name="files" multiple accept=".jpg,.png,.pdf">
+        <br><br>
+        
+        <h3>Color Picker</h3>
+        
+        <!-- type="color": Color picker widget -->
+        <!-- value: Default color in hex format -->
+        <label for="color">Choose Color:</label>
+        <input type="color" id="color" name="color" value="#ff0000">
+        <br><br>
+        
+        <!-- type="hidden": Hidden field (not visible, sends data to server) -->
+        <input type="hidden" name="user_id" value="12345">
+        
+        <h3>Buttons</h3>
+        
+        <!-- BUTTON: Button element -->
+        <!-- type="submit": Submits the form -->
+        <button type="submit">Submit Form</button>
+        
+        <!-- type="reset": Clears all form fields -->
+        <button type="reset">Reset Form</button>
+        
+        <!-- type="button": Regular button, does nothing unless JavaScript added -->
+        <!-- onclick: JavaScript code to run when clicked -->
+        <button type="button" onclick="alert('Clicked!')">Regular Button</button>
+        
+        <!-- INPUT buttons: Alternative way to create buttons -->
+        <input type="submit" value="Submit Input">
+        <input type="reset" value="Reset Input">
+        <input type="button" value="Button Input">
+        <br><br>
+        
+        <!-- FIELDSET: Groups related form elements with border -->
+        <fieldset>
+            <!-- LEGEND: Title/label for fieldset -->
+            <legend>Personal Information</legend>
+            
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            <br>
+            
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+        </fieldset>
+        <br>
+        
+        <h3>Datalist (Autocomplete)</h3>
+        
+        <!-- DATALIST: Provides autocomplete suggestions for input -->
+        <!-- list attribute on input connects to datalist id -->
+        <label for="browser">Choose Browser:</label>
+        <input list="browsers" id="browser" name="browser">
+        
+        <!-- id links to input's list attribute -->
+        <datalist id="browsers">
+            <!-- Options shown as suggestions while typing -->
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+        </datalist>
+        
+    <!-- Closing form tag -->
+    </form>
+    
+</section>
+
+<!-- ======================================== -->
+<!--      7. SEMANTIC HTML5 ELEMENTS         -->
+<!-- ======================================== -->
+
+<section id="semantic">
+    <h2>7. Semantic HTML5 Elements</h2>
+    
+    <!-- ARTICLE: Self-contained content (blog post, news article, etc.) -->
+    <article>
+        <h3>Article Element</h3>
+        <p>Represents independent, self-contained content.</p>
+    </article>
+    
+    <!-- ASIDE: Content aside from main content (sidebar, related info) -->
+    <aside>
+        <h3>Aside Element</h3>
+        <p>Represents content aside from main content (sidebar).</p>
+    </aside>
+    
+    <!-- DETAILS: Collapsible content widget -->
+    <details>
+        <!-- SUMMARY: Clickable heading for details (visible part) -->
+        <summary>Click to expand</summary>
+        <!-- This content hidden until summary clicked -->
+        <p>This content is hidden until you click the summary.</p>
+    </details>
+    <br>
+    
+    <!-- SECTION: Generic thematic grouping of content -->
+    <section>
+        <h3>Section Element</h3>
+        <p>Represents a thematic grouping of content.</p>
+    </section>
+    
+    <!-- NAV: Navigation links section -->
+    <nav>
+        <h3>Nav Element</h3>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <!-- MAIN: Main content of document (only one per page) -->
+    <main>
+        <h3>Main Element</h3>
+        <p>Represents the main content of the document.</p>
+    </main>
+    
+    <!-- FOOTER: Footer section (copyright, links, contact info) -->
+    <footer>
+        <h3>Footer Element</h3>
+        <p>Represents footer content.</p>
+    </footer>
+    
+    <h3>Time Element</h3>
+    
+    <!-- TIME: Represents date/time in machine-readable format -->
+    <!-- datetime: Machine-readable format for computers/search engines -->
+    <!-- Text inside is human-readable -->
+    <p>Published on <time datetime="2024-01-15">January 15, 2024</time></p>
+    
+    <h3>Progress Bar</h3>
+    
+    <!-- PROGRESS: Shows task completion progress -->
+    <!-- value: Current progress -->
+    <!-- max: Maximum/total value -->
+    <progress value="70" max="100">70%</progress>
+    
+    <h3>Meter</h3>
+    
+    <!-- METER: Shows measurement within known range (like gauge) -->
+    <!-- Different from progress - shows measurement not completion -->
+    <meter value="6" min="0" max="10">6 out of 10</meter>
+    
+</section>
+
+<!-- ======================================== -->
+<!--      8. DIV & SPAN                      -->
+<!-- ======================================== -->
+
+<section>
+    <h2>8. Div & Span</h2>
+    
+    <h3>Div - Block Level Container</h3>
+    
+    <!-- DIV: Generic block-level container (no semantic meaning) -->
+    <!-- Takes full width available -->
+    <!-- style attribute: Inline CSS styling -->
+    <div style="background-color: lightblue; padding: 10px;">
+        <p>This is inside a div. Div is a block-level element.</p>
+        <p>It takes full width available.</p>
+    </div>
+    
+    <h3>Span - Inline Container</h3>
+    
+    <!-- SPAN: Generic inline container (no semantic meaning) -->
+    <!-- Only takes width needed for its content -->
+    <!-- Doesn't break text flow, stays in same line -->
+    <p>This is a paragraph with <span style="color: red;">red text using span</span> element.</p>
+    <p>Span is an inline element and doesn't break the flow.</p>
+    
+</section>
+
+<!-- ======================================== -->
+<!--      9. HTML ENTITIES                   -->
+<!-- ======================================== -->
+
+<section>
+    <h2>9. HTML Entities</h2>
+    
+    <!-- HTML ENTITIES: Special characters that need encoding -->
+    <!-- Format: &name; or &#number; -->
+    
+    <!-- &lt; represents < (less than symbol) -->
+    <p>&lt; - Less than (&amp;lt;)</p>
+    
+    <!-- &gt; represents > (greater than symbol) -->
+    <p>&gt; - Greater than (&amp;gt;)</p>
+    
+    <!-- &amp; represents & (ampersand symbol) -->
+    <p>&amp; - Ampersand (&amp;amp;)</p>
+    
+    <!-- &quot; represents " (double quote) -->
+    <p>&quot; - Quote (&amp;quot;)</p>
+    
+    <!-- &apos; represents ' (apostrophe/single quote) -->
+    <p>&apos; - Apostrophe (&amp;apos;)</p>
+    
+    <!-- &copy; represents © (copyright symbol) -->
+    <p>&copy; - Copyright (&amp;copy;)</p>
+    
+    <!-- &reg; represents ® (registered trademark) -->
+    <p>&reg; - Registered (&amp;reg;)</p>
+    
+    <!-- &trade; represents ™ (trademark symbol) -->
+    <p>&trade; - Trademark (&amp;trade;)</p>
+    
+    <!-- &nbsp; represents non-breaking space (space that won't wrap) -->
+    <p>&nbsp; - Non-breaking space</p>
+    
+    <!-- &euro; represents € (euro currency symbol) -->
+    <p>&euro; - Euro (&amp;euro;)</p>
+    
+    <!-- &pound; represents £ (pound sterling symbol) -->
+    <p>&pound; - Pound (&amp;pound;)</p>
+    
+</section>
+
+<!-- ======================================== -->
+<!--      10. COMMENTS                       -->
+<!-- ======================================== -->
+
+<section>
+    <h2>10. HTML Comments</h2>
+    
+    <!-- This is a single line comment -->
+    <!-- Comments start with <!-- and end with -->
+    <!-- They are not visible in browser, only in source code -->
+    
+    <!-- 
+        This is a 
+        multi-line comment
+        It can span several lines
+        Useful for temporarily hiding code or adding notes
+    -->
+    
+    <p>Comments are not visible in the browser but visible in source code.</p>
+    
+</section>
+
+<!-- ======================================== -->
+<!--      11. ATTRIBUTES                     -->
+<!-- ======================================== -->
+
+<section>
+    <h2>11. Common HTML Attributes</h2>
+    
+    <!-- TABLE: Showing common attributes and their usage -->
+    <table>
+        <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>id</td>
+            <td>Unique identifier</td>
+            <td>&lt;div id="header"&gt;</td>
+        </tr>
+        <tr>
+            <td>class</td>
+            <td>Class name for CSS</td>
+            <td>&lt;p class="text"&gt;</td>
+        </tr>
+        <tr>
+            <td>style</td>
+            <td>Inline CSS</td>
+            <td>&lt;p style="color:red"&gt;</td>
+        </tr>
+        <tr>
+            <td>title</td>
+            <td>Tooltip text</td>
+            <td>&lt;p title="Info"&gt;</td>
+        </tr>
+        <tr>
+            <td>href</td>
+            <td>Link URL</td>
+            <td>&lt;a href="url"&gt;</td>
+        </tr>
+        <tr>
+            <td>src</td>
+            <td>Source file</td>
+            <td>&lt;img src="image.jpg"&gt;</td>
+        </tr>
+        <tr>
+            <td>alt</td>
+            <td>Alternative text</td>
+            <td>&lt;img alt="desc"&gt;</td>
+        </tr>
+        <tr>
+            <td>width/height</td>
+            <td>Dimensions</td>
+            <td>&lt;img width="100"&gt;</td>
+        </tr>
+        <tr>
+            <td>target</td>
+            <td>Link target</td>
+            <td>&lt;a target="_blank"&gt;</td>
+        </tr>
+        <tr>
+            <td>disabled</td>
+            <td>Disable element</td>
+            <td>&lt;input disabled&gt;</td>
+        </tr>
+        <tr>
+            <td>required</td>
+            <td>Required field</td>
+            <td>&lt;input required&gt;</td>
+        </tr>
+        <tr>
+            <td>placeholder</td>
+            <td>Input hint</td>
+            <td>&lt;input placeholder="text"&gt;</td>
+        </tr>
+        <tr>
+            <td>readonly</td>
+            <td>Read only</td>
+            <td>&lt;input readonly&gt;</td>
+        </tr>
+        <tr>
+            <td>maxlength</td>
+            <td>Max characters</td>
+            <td>&lt;input maxlength="10"&gt;</td>
+        </tr>
+    </table>
+    
+</section>
+
+<!-- ======================================== -->
+<!--      12. BLOCK vs INLINE ELEMENTS       -->
+<!-- ======================================== -->
+
+<section>
+    <h2>12. Block vs Inline Elements</h2>
+    
+    <h3>Block Elements (Take full width)</h3>
+    <!-- Block elements start on new line and take full available width -->
+    <p>div, p, h1-h6, ul, ol, li, table, form, header, footer, section, article, nav, aside</p>
+    
+    <h3>Inline Elements (Only take necessary width)</h3>
+    <!-- Inline elements stay in same line and only take needed width -->
+    <p>span, a, img, strong, em, b, i, u, br, input, button, label, select, textarea</p>
+    
+</section>
+
+<!-- ======================================== -->
+<!--      FOOTER                             -->
+<!-- ======================================== -->
+
+<!-- FOOTER with inline styles for dark background -->
+<footer style="background-color: #333; color: white; padding: 20px; text-align: center;">
+    <!-- &copy; is copyright symbol © -->
+    <p>&copy; 2024 HTML Complete Guide. All rights reserved.</p>
+    
+    <p>
+        <!-- Links styled with white color -->
+        <a href="#top" style="color: white;">Back to Top</a> |
+        <a href="mailto:contact@example.com" style="color: white;">Contact</a>
+    </p>
+    
+</footer>
+
+<!-- ======================================== -->
+<!--      JAVASCRIPT                         -->
+<!-- ======================================== -->
+
+<!-- SCRIPT: Contains JavaScript code -->
+<script>
+    // Single line JavaScript comment
+    
+    /* 
+       Multi-line JavaScript comment
+    */
+    
+    // console.log: Prints message to browser console (F12 Developer Tools)
+    console.log("HTML page loaded successfully!");
+    
+    // Function definition
+    function showAlert() {
+        // alert: Shows popup message box
+        alert("Button clicked!");
+    }
+</script>
+
+<!-- External JavaScript file -->
+<!-- src: Path to external .js file -->
+<script src="script.js"></script>
+
+<!-- Closing body tag -->
+</body>
+
+<!-- Closing html tag - End of document -->
+</html>
