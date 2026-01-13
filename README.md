@@ -46,7 +46,7 @@ This project contains a complete HTML5 reference document where every single lin
 
 - GitHub: [@muhdasif1](https://github.com/muhdasif1)
 - LinkedIn: [Muhammad Asif](https://www.linkedin.com/feed/)
-- Email: muhdasif20005@gmail.com
+- Email: asifnasaaz2005@gmail.com
 
 ## ⭐ Show Your Support
 
