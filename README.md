@@ -47,12 +47,13 @@ This project contains a complete HTML5 reference document where every single lin
 - GitHub: [@muhdasif1](https://github.com/muhdasif1)
 - LinkedIn: [Muhammad Asif](https://www.linkedin.com/feed/)
 - Email: muhdasif20005@gmail.com
----
+
 ## ⭐ Show Your Support
 
 Give a ⭐️ if this project helped you!
----
+
 ## Acknowledgments
 
 Created as a comprehensive learning resource for HTML beginners and as a quick reference for all developers.
 
+---
